@@ -1,5 +1,5 @@
 <body>
-<a href="/photos">Photos can be found here</a>
+<a href="photos">Photos can be found here</a>
 <div id="photo-wall">Loading photos...</div>
 <script>
 let
@@ -7,7 +7,7 @@ i = 1,
 wall = document.getElementById("photo-wall");
 wall.innerHTML = "";
 while(i < 78){
-  wall.innerHTML += '<img class="src-link" src="/photos'+ i + '.jpg">';
+  wall.innerHTML += '<img class="src-link" src="photos'+ i + '.jpg">';
   i++;
 }
 </script>
