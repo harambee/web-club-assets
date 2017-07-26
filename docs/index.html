@@ -5,15 +5,23 @@
 </head>
 <body>
 <div id="photo-wall">Loading photos...</div>
+<a id="load">Load More</a>
 <script>
 let
 i = 1,
+count = 10
 wall = document.getElementById("photo-wall");
 wall.innerHTML = "";
-while(i < 78){
+function buildPhotos(){
+while(i < count){
   wall.innerHTML += '<img class="src-link" src="https://harambee.github.io/web-club-assets/photos/photo'+ i + '.jpg">';
   i++;
 }
+count = count + 10;
+}
+buildPhotos();
+var load = document.getElementById("load");
+load.addEventListener('click', buildPhotos );
 </script>
 </body>
 </html>
