@@ -8,3 +8,17 @@ img
     height: auto;
     padding: 10px;
 }
+
+#load
+{
+    position: fixed;
+    top: 85%;
+    right: 0;
+
+    padding: 10px 15px;
+
+    cursor: pointer;
+
+    color: white;
+    background: black;
+}
