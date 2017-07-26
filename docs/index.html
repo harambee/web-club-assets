@@ -9,8 +9,8 @@
 <script>
 let
 i = 1,
-count = 10
-wall = document.getElementById("photo-wall");
+count = 11;
+const wall = document.getElementById("photo-wall");
 wall.innerHTML = "";
 function buildPhotos(){
 while(i < count){
@@ -20,8 +20,11 @@ while(i < count){
 count = count + 10;
 }
 buildPhotos();
-var load = document.getElementById("load");
+const load = document.getElementById("load");
 load.addEventListener('click', buildPhotos );
+const =
+
+
 </script>
 </body>
 </html>
