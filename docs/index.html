@@ -9,11 +9,11 @@
 <script>
 let
 i = 1,
-count = 11;
+count = 10;
 const wall = document.getElementById("photo-wall");
 wall.innerHTML = "";
 function buildPhotos(){
-while(i < count){
+while(i <= count){
   wall.innerHTML += '<img class="src-link" src="https://harambee.github.io/web-club-assets/photos/photo'+ i + '.jpg">';
   i++;
 }
@@ -22,8 +22,6 @@ count = count + 10;
 buildPhotos();
 const load = document.getElementById("load");
 load.addEventListener('click', buildPhotos );
-
-
 
 </script>
 </body>
